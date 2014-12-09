@@ -11,15 +11,15 @@ game.GameoverScreen = me.ScreenObject.extend({
                 me.game.world.addChild(new (me.Renderable.extend ({
                     init: function(){
                         this._super(me.Renderable, 'init', [510, 30, me.game.viewport.width, me.game.viewport.height]);
-                        this.font = new me.Font("Arial", 46, "white");
+                        this.font = new me.Font("Arial", 46, "gold");
                     }, 
                     
                     draw: function(renderer){
                         
                         
                         
-                        this.font.draw(renderer.getContext(), "Press ENTER to go to main menu.", 250, 530);
-                        this.font.draw(renderer.getContext(), "Press R to go to restart.", 375, 130);
+                        this.font.draw(renderer.getContext(), "Press Enter to go back to the home screen", 250, 530);
+                        this.font.draw(renderer.getContext(), "Press the R key to start again", 375, 130);
                     }
                 })));
                 
@@ -44,3 +44,4 @@ game.GameoverScreen = me.ScreenObject.extend({
         me.event.unsubscribe(this.handler);
 	}    
 });
+

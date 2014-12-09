@@ -41,9 +41,12 @@ var game = {
 	"loaded" : function () {
                 me.pool.register("mario", game.PlayerEntity, true);
                 me.pool.register("BadGuy", game.BadGuy);
+                me.pool.register("BadFly", game.BadFly);
                 me.pool.register("mushroom", game.Mushroom);
                 me.pool.register("star", game.star);
-                
+                me.pool.register("lever", game.lever);
+                me.pool.register("lever2", game.lever2);
+                me.pool.register("lever3", game.lever3);
                 me.pool.register("levelTrigger", game.LevelTrigger);
                 
 		me.state.set(me.state.MENU, new game.TitleScreen());
