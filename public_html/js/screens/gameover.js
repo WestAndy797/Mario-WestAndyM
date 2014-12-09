@@ -18,8 +18,8 @@ game.GameoverScreen = me.ScreenObject.extend({
                         
                         
                         
-                        this.font.draw(renderer.getContext(), "Press Enter to go back to the home screen", 250, 530);
-                        this.font.draw(renderer.getContext(), "Press the R key to start again", 375, 130);
+                        this.font.draw(renderer.getContext(), "press Enter for the Menu", 250, 530);
+                        this.font.draw(renderer.getContext(), "press R to restart", 375, 130);
                     }
                 })));
                 
