@@ -21,7 +21,7 @@ body {
 	margin: auto;
 
 	/* Hide the gap for font descenders. */
-	display: block;
+	display: ruby;
 	
 	/* disable scaling interpolation */
 	image-rendering: optimizeSpeed;
