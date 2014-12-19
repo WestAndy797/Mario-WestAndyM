@@ -434,9 +434,9 @@ game.lever2 = me.Entity.extend({
 
     },
     update: function(delta) {
-    
+
         this.body.update(delta);
-console.log(turn2);
+        console.log(turn2);
         if (turn2 == "flick" && restrict == 2) {
 
             confirm("you need 1 more lever.");
